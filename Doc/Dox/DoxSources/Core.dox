@@ -1,0 +1,15 @@
+/**
+    @defgroup Core Zavod3D Core
+
+      - @ref CoreOverview
+      - @ref CoreSettings
+
+    @section CoreOverview Overview
+
+    Core содержит самую базовую часть движка, которую используют все подсистемы движка.
+	
+	@section CoreSettings Core Settings
+	
+	Если необходимо собрать движок в виде dll, то необходимо задать макро ZVD_EXPORTS в настройках проекта.
+	При этом автоматически сменится значение макроса ZVD_API. Макрос @ref ZVD_API необходим перед всеми экспортируемыми функциями движка.
+*/

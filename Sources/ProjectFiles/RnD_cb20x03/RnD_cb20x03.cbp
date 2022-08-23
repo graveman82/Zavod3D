@@ -33,6 +33,7 @@
 			<Add option="-Wall" />
 			<Add directory="../../Engine" />
 		</Compiler>
+		<Unit filename="../../Engine/Core/zvdBase.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
