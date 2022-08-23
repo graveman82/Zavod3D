@@ -33,7 +33,9 @@
 			<Add option="-Wall" />
 			<Add directory="../../Engine" />
 		</Compiler>
+		<Unit filename="../../Engine/Core/Platform/zvdCompilerGCC.h" />
 		<Unit filename="../../Engine/Core/zvdBase.h" />
+		<Unit filename="../../Engine/Core/zvdPlatform.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -34,9 +34,9 @@ Purpose: включается во все файлы.
 Define macro ZVD_EXPORTS if you want to export engine interfaces.
 */
 #ifdef ZVD_EXPORTS
-#   define ZVD_API __declspec(dllexport)
+#   define ZVD_ENGINE_API __declspec(dllexport)
 #else
-#   define ZVD_API __declspec(dllimport)
+#   define ZVD_ENGINE_API __declspec(dllimport)
 #endif
 
 #endif // ZV3D_CORE_BASE_H
