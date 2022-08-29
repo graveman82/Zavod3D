@@ -14,6 +14,8 @@
 				<Option compiler="gnu_gcc_compiler_x32" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DZVD_DEBUG_LEVEL=ZVD_DEBUG_LEVEL_HIGH" />
+					<Add option="-DZVD_USE_MSGBOX_FOR_ASSERT" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,10 +34,42 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="../../Engine" />
+			<Add directory="../../../../Zavod3DExternal/boost_1_78_0" />
+			<Add directory="../../../Internal/Ogre3D1_7_4Files" />
 		</Compiler>
-		<Unit filename="../../Engine/Core/Platform/zvdCompilerGCC.h" />
-		<Unit filename="../../Engine/Core/zvdBase.h" />
-		<Unit filename="../../Engine/Core/zvdPlatform.h" />
+		<Linker>
+			<Add directory="../../../../Zavod3DExternal/boost_1_78_0/gcc80100_stage/lib" />
+		</Linker>
+		<Unit filename="../../../Internal/Ogre3D1_7_4Files/OgreMain/include/OgreConfig.h" />
+		<Unit filename="../../../Internal/Ogre3D1_7_4Files/OgreMain/include/OgrePlatform.h" />
+		<Unit filename="../../../Internal/OgreBuildSettings.h" />
+		<Unit filename="../../Engine/Core/Containers/Zv3DVariant.cpp" />
+		<Unit filename="../../Engine/Core/Containers/Zv3DVariant.h" />
+		<Unit filename="../../Engine/Core/Debug/Zv3DAssert.cpp" />
+		<Unit filename="../../Engine/Core/Debug/Zv3DAssert.h" />
+		<Unit filename="../../Engine/Core/Debug/Zv3DDebugDefs.h" />
+		<Unit filename="../../Engine/Core/Debug/Zv3DSingletonForDebug.h" />
+		<Unit filename="../../Engine/Core/Debug/Zv3DStaticAssert.h" />
+		<Unit filename="../../Engine/Core/MemMng/Zv3DMemDefs.h" />
+		<Unit filename="../../Engine/Core/MemMng/Zv3DMemUtils.cpp" />
+		<Unit filename="../../Engine/Core/MemMng/Zv3DMemUtils.h" />
+		<Unit filename="../../Engine/Core/Platform/PlatformWin32/Zv3DSysDefsWin32.cpp" />
+		<Unit filename="../../Engine/Core/Platform/PlatformWin32/Zv3DSysDefsWin32.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DCompilerGCC.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DGCCIntTypes.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DLangIntTypes.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DSysDefs.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DTypes.h" />
+		<Unit filename="../../Engine/Core/Platform/Zv3DTypesWin.h" />
+		<Unit filename="../../Engine/Core/StringUtils/Zv3DCStrUtils.cpp" />
+		<Unit filename="../../Engine/Core/StringUtils/Zv3DCStrUtils.h" />
+		<Unit filename="../../Engine/Core/StringUtils/Zv3DSafeCStringUtils.cpp" />
+		<Unit filename="../../Engine/Core/StringUtils/Zv3DSafeCStringUtils.h" />
+		<Unit filename="../../Engine/Core/Utils/Zv3DSmallCommonUtils.cpp" />
+		<Unit filename="../../Engine/Core/Utils/Zv3DSmallCommonUtils.h" />
+		<Unit filename="../../Engine/Core/Utils/Zv3DStringify.h" />
+		<Unit filename="../../Engine/Zv3DBuildSettings.h" />
+		<Unit filename="../../Tests/test01.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
